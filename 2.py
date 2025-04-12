@@ -5,11 +5,12 @@ import numpy as np
 # Generate and preprocess data (same as before)
 x1 = np.array([i for i in range(0, 10000, 100)])
 x2 = np.array([i for i in range(0, 1000, 10)])
-
+# print
+#new line
 # Normalization
 x1 = (x1 - x1.min()) / (x1.max() - x1.min())
 x2 = (x2 - x2.min()) / (x2.max() - x1.min())
-
+#another line
 # Create target values
 a, b, c = 5, 3, 1
 y = a * x1 + b * x2 + c
